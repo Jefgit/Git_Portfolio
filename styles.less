@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#base{
+    font-family:'Varela Round' ;
+    width: 816px;
+    margin: 0px auto;
+    background-image: linear-gradient(to left,rgb(193, 205, 217), rgb(245, 244, 250),rgb(193, 205, 217));
+    padding: 20px 15px 10px 10px;
+    img{
+        width: 250px;
+        height: 200px;
+        object-position: right 70%;
+        object-fit: cover;
+        display: inline-block;
+    }
+}
+#headtext {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    h1{
+        font-size: 50px;
+        font-weight :bold;
+        color: rgb(47,73,104);
+    }
+    p{
+        border-top: 3px solid   rgb(45,71,103);
+        margin-top: 15px;
+        padding-top: 20px;
+    }
+}
+#content{
+    text-align: justify;
+    background-color: rgb(230, 233, 255);
+    padding: 10px 20px;
+    margin:10px 0px 10px 0px ;
+    p{
+        margin: 20px;
+    }
+} 
+#logos{
+    min-width: 340px;
+    height: 340px;
+    margin-top:30px ;
+    margin-left: 30px;
+    display: inline-block;
+    img{
+        width:61px;
+        height: 61px;
+        display: inline-block;
+    }
+}
+#project{
+    width: 370px;
+    height: 370px;
+    background-image: linear-gradient(rgb(193, 205, 217), rgb(245, 244, 250),rgb(193, 205, 217));
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 35px 20px;
+    margin-top: 30px;
+    margin-left: 31px;
+    .bold{
+        font-weight: bold;
+        margin-top: 20px;
+    }
+}
+#links{
+    margin-top: 30px;
+    img{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        }
+        a{
+            display: inline-block;
+            vertical-align:middle;
+        }
+} 
+.center{
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+//mobile 
+@media only screen and (max-width: 480px) {
+    #base {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        header{
+            text-align: center;
+        }
+        .sm-1{
+            a{
+                font-size: 0.6rem;
+            }
+            img{
+               width: 5%;
+               height: 5%;
+            }
+        }
+        .sm-2{
+            width: 80%;
+            height: 30%;
+            object-position: right 80%;
+            object-fit: cover;
+        }
+        .sm-4{
+            width: 100%;
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            p{
+                font-size:0.68rem ;
+            }
+            img{
+                width: 15%;
+                height: 15%;
+            }
+        }
+        .center{
+            font-size: 0.9rem;
+            padding: 5px;
+        }
+    }
+    #headtext{
+        text-align: center;
+        h1{
+            font-size: 1.6rem;
+        }
+        p{
+            width: 85%;
+            font-size: 0.59rem;
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+        }
+        .sm-4{
+            text-align: center;
+        }
+    }
+    #content{
+        width: 100%;
+        padding: 10px;
+    }
+    #logos{
+        width: 100%;
+        display: block;
+        .center{
+            font-size:1rem ;
+            padding: 10px 0px 15px 0px;
+            width: 100%;
+            }
+    }
+    #project{
+        .center{
+            font-size:1rem ;
+            padding: 10px 0px 0px 0px;
+        }
+    }
+    #row1, #row2, #row3, #row4{
+        text-align: center;
+    }
+}
+//tablet
+@media only screen and (min-width: 481px) {
+    #base {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+//desktop
+@media only screen and (min-width: 1024px) { 
+    #base{
+        width: 816px;
+        margin: 0px auto;
+        padding: 20px 15px 10px 10px;
+    }
+}
